@@ -1,4 +1,4 @@
-package org.javarevision;
+package org.javarevision.loops;
 
 public class ForEachLoop {
     public static void main(String[] args) {

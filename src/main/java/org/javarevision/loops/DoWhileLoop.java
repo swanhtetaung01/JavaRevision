@@ -1,4 +1,4 @@
-package org.javarevision;
+package org.javarevision.loops;
 
 import java.util.Scanner;
 
