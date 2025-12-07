@@ -1,7 +1,7 @@
-package org.javarevision.modifiers.defaultaccessmodifier.secondpackage;
+package org.javarevision.accessmodifiers.secondpackage;
 
-import firstpackage.A;
-import firstpackage.B;
+import org.javarevision.accessmodifiers.firstpackage.A;
+import org.javarevision.accessmodifiers.firstpackage.B;
 
 public class D extends B {
     void printMessageFromD(){
