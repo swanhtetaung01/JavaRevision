@@ -1,4 +1,4 @@
-package org.javarevision.modifiers.defaultaccessmodifier.firstpackage;
+package org.javarevision.accessmodifiers.firstpackage;
 
 public class C extends B {
 

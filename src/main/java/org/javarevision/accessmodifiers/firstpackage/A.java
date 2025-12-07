@@ -1,4 +1,4 @@
-package org.javarevision.modifiers.defaultaccessmodifier.firstpackage;
+package org.javarevision.accessmodifiers.firstpackage;
 
 /*
 Public > Protected > Default > Private
@@ -10,6 +10,7 @@ public class A {
     int defaultVariableInA;
     public int publicVariableInA;
     protected int protectedVariableInA;
+    public int publicIntegerInA;
 
     protected void printMessageFromA(){
         privateVariableInA = 1000;
