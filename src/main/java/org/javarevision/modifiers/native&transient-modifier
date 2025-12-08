@@ -1,0 +1,24 @@
+Native
+
+    Native keyword is only applicable for methods and not anywhere else.
+
+    Native keyword is used to indicate that a particular method is implemented in C or C++ and not in java.
+    -> why implement method in another programming language?
+        . java is not good with machine level communication.
+        . if require to interact with machine level, might need to use another language in some software.
+        . a part of software can be already implemented in native programming language and have to make use of it.
+
+    Native can never be used with abstract keyword because for abstract there has to be no implementation.
+
+    Native methods cannot be declared as strictfp.
+
+    Major disadvantage of native keyword is that there is no guarantee that the code will be platform independent.
+
+
+Transient
+
+    Serialization is a process of converting an object into a file or stream before transmitting it across the network. Converting the object back from its serialized form to actual object is know as deserialization.
+
+    Transient is used when you might not want to safe a particular value within an object to file due to security contraints.
+    If you are serializing an object to a file, you might want java to skip serializing this particular instance or class variable into serialized form.
+    You can declared the variable with transient keyword.
