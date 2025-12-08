@@ -1,4 +1,4 @@
-package org.javarevision.accessmodifiers.firstpackage;
+package org.javarevision.modifiers.accessmodifiers.firstpackage;
 
 /*
 Public > Protected > Default > Private
