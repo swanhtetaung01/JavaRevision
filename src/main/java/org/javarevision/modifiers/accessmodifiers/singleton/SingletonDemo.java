@@ -1,6 +1,4 @@
-package org.javarevision.accessmodifiers.singleton;
-
-import jdk.jshell.execution.Util;
+package org.javarevision.modifiers.accessmodifiers.singleton;
 
 public class SingletonDemo {
     static SingletonDemo instance = null;
