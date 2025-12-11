@@ -10,7 +10,6 @@ public class MethodToPrintException {
         } catch (ArithmeticException e) {
             e.printStackTrace(); //1
 
-
             /*
             System.out.println(e.toString());  //2
 
