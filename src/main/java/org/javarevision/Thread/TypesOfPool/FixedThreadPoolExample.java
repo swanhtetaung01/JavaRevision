@@ -1,11 +1,11 @@
-package org.javarevision.Thread;
+package org.javarevision.Thread.TypesOfPool;
 
 import org.javarevision.Thread.SettingThreadNames.Task;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ExecutorServiceExample {
+public class FixedThreadPoolExample {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         for (int i = 0; i < 10; i++) {
