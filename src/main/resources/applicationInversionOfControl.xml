@@ -9,6 +9,18 @@
         <constructor-arg ref="localdataprovider"/>
     </bean>
 
+    <bean id="usermanagerDB" class="org.springexercises.inversionOfControl.UserManager">
+        <constructor-arg ref="databaseprovider"/>
+    </bean>
+
+    <bean id="usermanagerWeb" class="org.springexercises.inversionOfControl.UserManager">
+        <constructor-arg ref="webprovider"/>
+    </bean>
+
+    <bean id="usermanagerLocal" class="org.springexercises.inversionOfControl.UserManager">
+        <constructor-arg ref="localdataprovider"/>
+    </bean>
+
     <bean id="databaseprovider" class="org.springexercises.inversionOfControl.UserDataBaseProvider">
     </bean>
 
