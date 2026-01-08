@@ -10,7 +10,7 @@
         <property name="model" value="MarkX"/>
     </bean>
 
-    <!--ConstructorInjection-->
+    <!--SetterInjection-->
     <bean id="MyCar" class="org.springexercises.setterInjection.Car">
         <property name="specification" ref="carSpecification"/>
     </bean>
