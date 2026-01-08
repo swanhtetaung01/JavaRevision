@@ -1,8 +1,7 @@
 package org.springexercises.inversionOfControl;
 
-public class UserDataBaseProvider implements UserDataProvider {
+public class UserDataBaseProvider {
 
-    @Override
     public String getUserData()  {
         return "UserData from UserDataBaseProvider";
     }

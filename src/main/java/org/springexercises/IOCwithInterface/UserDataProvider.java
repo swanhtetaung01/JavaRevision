@@ -1,4 +1,4 @@
-package org.springexercises.inversionOfControl;
+package org.springexercises.IOCwithInterface;
 
 public interface UserDataProvider {
 
