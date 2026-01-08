@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userdatabaseprovider" class="org.springexercises.IOCwithInterface.UserDataBaseProvider"/>
+    <bean id="userwebprovider" class="org.springexercises.IOCwithInterface.UserWebProvider"/>
+    <bean id="userlocaldataprovider" class="org.springexercises.IOCwithInterface.UserLocalDataProvider"/>
+
+    <bean id="usermanagerwithDB" class="org.springexercises.IOCwithInterface.UserManager">
+        <constructor-arg ref="userdatabaseprovider"/>
+    </bean>
+    <bean id="usermanagerwithWeb" class="org.springexercises.IOCwithInterface.UserManager">
+        <constructor-arg ref="userwebprovider"/>
+    </bean>
+    <bean id="usermanagerwithLocal" class="org.springexercises.IOCwithInterface.UserManager">
+        <constructor-arg ref="userlocaldataprovider"/>
+    </bean>
+</beans>

@@ -1,18 +1,21 @@
 package org.springexercises.IOCwithInterface;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class UserInteraction {
 
     public static void main(String[] args) {
-        UserDataProvider userDataProvider1 = new UserDataBaseProvider();
-        UserManager userManager1 = new UserManager(userDataProvider1);
-        System.out.println(userManager1.getUserDetails());
+        ApplicationContext context
+                = new ClassPathXmlApplicationContext("applicationIOCwithInterface.xml");
 
-        UserDataProvider userDataProvider2 = new UserWebProvider();
-        UserManager userManager2 = new UserManager(userDataProvider2);
-        System.out.println(userManager2.getUserDetails());
+        UserManager userManagerDB = (UserManager) context.getBean("usermanagerwithDB");
+        System.out.println(userManagerDB.getUserDetails());
 
-        UserDataProvider userDataProvider3 = new UserLocalDataProvider();
-        UserManager userManager3 = new UserManager(userDataProvider3);
-        System.out.println(userManager3.getUserDetails());
+        UserManager userManagerWeb = (UserManager) context.getBean("usermanagerwithWeb");
+        System.out.println(userManagerWeb.getUserDetails());
+
+        UserManager userManagerLocal = (UserManager) context.getBean("usermanagerwithLocal");
+        System.out.println(userManagerLocal.getUserDetails());
     }
 }
