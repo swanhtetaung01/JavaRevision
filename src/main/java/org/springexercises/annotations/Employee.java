@@ -1,9 +1,9 @@
-package org.springexercises.componentscan;
+package org.springexercises.annotations;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("employee")
 public class Employee {
     private int employeeId;
 
